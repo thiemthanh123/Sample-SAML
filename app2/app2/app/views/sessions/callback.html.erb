@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Callback</title>
+  <style>
+    body, h1, p {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f7f9fc;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      width: 300px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Callback</h1>
+  <p><strong>User logged:</strong> <%= @message %></p>
+  <% if @token.present? %>
+    <p><strong>Token: </strong> <%= @token %></p>
+  <% end %>
+  <br>
+  <br>
+  <br>
+  <h2>Home Page</h2>
+  <%= link_to 'Login with App IdP', "http://localhost:3000/login?redirect_url=#{CGI.escape('http://localhost:3001/callback')}" %>
+</div>
+</body>
+</html>

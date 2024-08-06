@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body, h1, form, div {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f7f9fc;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      color: #34495e;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      background-color: #3498db;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+<div class="login-container">
+  <h1>Login</h1>
+  <%= form_with url: '/login', local: true do %>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <div>
+      <%= label_tag :email %>
+      <%= text_field_tag :email %>
+    </div>
+    <div>
+      <%= label_tag :password %>
+      <%= password_field_tag :password %>
+    </div>
+    <%= hidden_field_tag :redirect_url, @redirect_url %>
+    <div>
+      <%= submit_tag "Login" %>
+    </div>
+  <% end %>
+</div>
+</body>
+</html>
