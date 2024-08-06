@@ -1,0 +1,101 @@
+<mxfile host="Electron" modified="2024-08-06T09:05:58.727Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="TglXMUBBSEYe-fXVYCih" version="21.6.8" type="device">
+  <diagram name="Page-1" id="FOyV2IrH_sHisQh-LYC9">
+    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-1" value="&lt;b&gt;Service Provider&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="140" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=link;" edge="1" parent="1" source="Z57L1shPjsP7Sok_sLZb-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-4" value="&lt;b&gt;User Agent&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="140" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=link;" edge="1" parent="1" source="Z57L1shPjsP7Sok_sLZb-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-5" value="&lt;b&gt;Identity Provider&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="140" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="250" as="sourcePoint" />
+            <mxPoint x="150" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-11" value="Request access to SP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="215" y="218" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="320" as="sourcePoint" />
+            <mxPoint x="440" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-13" value="Redirect to IdP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="210" y="288" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-14" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="360" as="sourcePoint" />
+            <mxPoint x="720" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-15" value="Send Authentication Request to IdP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="475" y="330" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-16" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="430" as="sourcePoint" />
+            <mxPoint x="440" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-17" value="response the authentication result from IdP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="445" y="400" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-18" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="480" as="sourcePoint" />
+            <mxPoint x="150" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-20" value="Send authentication result from IdP to SP for checking" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="140" y="448" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-21" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="540" as="sourcePoint" />
+            <mxPoint x="440" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-22" value="Successful authentication&lt;br&gt;Redirect to SP page with logged in formation" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="165" y="500" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-23" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="600" as="sourcePoint" />
+            <mxPoint x="440" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-28" value="&lt;a style=&quot;border-color: var(--border-color); font-size: 21px; background-color: transparent; box-sizing: border-box; text-decoration-line: none; text-overflow: ellipsis; overflow-x: hidden !important; display: block !important;&quot; href=&quot;https://github.com/thiemthanh123/Sample-SAML&quot; class=&quot;d-block overflow-x-hidden color-fg-default&quot; data-turbo-frame=&quot;repo-content-turbo-frame&quot; data-pjax=&quot;#repo-content-pjax-container&quot;&gt;Sample-SAML&lt;/a&gt;" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="770" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-24" value="Authentication failed&lt;br&gt;Redirect to SP page without logged not yet" style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="Z57L1shPjsP7Sok_sLZb-28">
+          <mxGeometry x="105" y="480" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Z57L1shPjsP7Sok_sLZb-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=link;strokeWidth=1;" edge="1" parent="Z57L1shPjsP7Sok_sLZb-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="99.5" y="560" as="targetPoint" />
+            <mxPoint x="99.5" y="120" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
